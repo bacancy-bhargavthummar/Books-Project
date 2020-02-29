@@ -14,7 +14,9 @@
          </tfoot>
          
     <tbody>
+    <% cache @products do %>
          <% @products.each do |product| %>
+          <% cache product do %>
           <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 
             <td class="image">
@@ -36,6 +38,8 @@
                </ul>
             </td>
           </tr>
+         <% end %>
+         <% end %>
          <% end %>
     </tbody>
 </table>

@@ -13,22 +13,22 @@
  *= require_tree .
  *= require_self
  */
- body {
-    margin: 0;
-    padding: 0;
-    }
+    body {
+        margin: 0;
+        padding: 0;
+        }
 
-    header.main {
-    text-align: center; 
-    @media (min-width: 30em) {
-    text-align: left; 
-    }
-    background: #282;
-    margin: 0;
-    h1 {
-    display: none;
-    }
-    }
+        header.main {
+        text-align: center; 
+        @media (min-width: 30em) {
+        text-align: left; 
+        }
+        background: #282;
+        margin: 0;
+        h1 {
+        display: none;
+        }
+        }
     .content {
         margin: 0;
         padding: 0;
@@ -91,4 +91,19 @@
         margin-bottom: 1em;
         padding: 1em 1.414em;
         text-align: center;
+        }
+
+    #cart {
+            article {
+            h2 {
+            margin-top: 0;
+            }
+            background: white;
+            border-radius: 0.5em;
+            margin: 1em;
+            padding: 1.414em;
+            @media (min-width: 30em) {
+            margin: 0; // desktop doesn't need this margin
+            }
+            }
         }
